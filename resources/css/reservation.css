@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+.reservations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://viagemegastronomia.cnnbrasil.com.br/wp-content/uploads/sites/5/2022/10/BA_RA-HOTEL-4.jpg?w=1024');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.reservations-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.reservation-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.reservation-room,
+.reservation-dates {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.edit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.2s;
+}
+
+.edit-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003e80);
+    transform: scale(1.05);
+}
+
+.edit-button:active {
+    transform: scale(1);
+}
+
+.no-reservations {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ff4d4d;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.create-button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #00ff3c, #18b300);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.2s;
+}
+
+.create-button:hover {
+    background: linear-gradient(45deg, #00ff3c, #18b300);
+    transform: scale(1.05);
+}
+
+.create-button:active {
+    transform: scale(1);
+}
+
+.delete-button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff0026, #b30000);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.2s;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background: linear-gradient(45deg, #ff0026, #b30000);
+    transform: scale(1.05);
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .reservations-title {
+        font-size: 2rem;
+    }
+
+    .reservation-card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .edit-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
