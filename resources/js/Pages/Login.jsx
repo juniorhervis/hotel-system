@@ -14,10 +14,8 @@ const Login = () => {
 
         axios.post('/login', { email, password })
             .then((response) => {
-                console.log('Login response:', response);
                 const { data } = response;
                 localStorage.setItem('token', data.token);
-                console.log(data.token);
                 Inertia.get('reservations');
             })
             .catch((error) => {
